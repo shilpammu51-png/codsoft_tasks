@@ -1,0 +1,324 @@
+/* General Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 15px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #60a5fa;
+}
+
+
+/* Home */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 50px 10%;
+}
+
+.home h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.home h2 span {
+    color: #2563eb;
+}
+
+.home h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    background-color: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Sections */
+
+section {
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #1f2937;
+}
+
+
+/* About */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-container img {
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #2563eb;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 12px;
+}
+
+
+/* Skills */
+
+.skills-section {
+    background-color: #e5e7eb;
+}
+
+.skills-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1000px;
+    margin: auto;
+}
+
+.skill {
+    background-color: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+
+/* Projects */
+
+.projects-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1100px;
+    margin: auto;
+}
+
+.project-card {
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    height: 180px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #dbeafe;
+
+    color: #1e40af;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.project-content p {
+    margin-bottom: 10px;
+}
+
+
+/* Resume */
+
+.resume-section {
+    text-align: center;
+    background-color: #e5e7eb;
+}
+
+
+/* Contact */
+
+.contact-info {
+    text-align: center;
+
+    font-size: 18px;
+
+    line-height: 2;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #1f2937;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home h2 {
+        font-size: 32px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
